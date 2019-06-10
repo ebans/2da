@@ -1,0 +1,62 @@
+{{>header}}
+<p><H1>LA LISTA DESPLEGABLE SE VEN LOS CURSOS QUE ESTAN DISPONIBLES, SOLO ES INFORMATIVA, PARA REALIZAR
+    LA MATRICULA DEBE COLOCAR EL NOMBRE DEL CURSO EN EL CAMPO DE CURSOS DISPONIBLES
+</H1></p>
+
+<form  method="POST" action="/regis" >
+<div class="form-group">
+<div class="row">
+    <div class="col">
+
+<label>Documento de Identidad</label>
+
+    
+    <input type="number" class="form-group" name="id"  placeholder="identificacion" required>
+    
+   </div>
+    <div class="col">
+<label>Correo</label>
+
+    
+<input type="text" class="form-group" name="correo" placeholder="email" required>
+ 
+</div>
+
+   <div class="col">
+<label>Nombre</label>
+
+    
+<input type="text" class="form-group" name="nombre" placeholder="nombre" required>
+
+</div>
+</div>
+<div class="row">
+    <div class="col">
+<label>Telefono</label>
+
+   
+<input type="number" class="form-group" name="telefono" placeholder="Telefono" required>
+</div>
+
+<div class="col">
+<label>Cursos</label>
+
+  {{{llenar}}}
+
+
+</div>
+<div class="col">
+<label>cursos Disponibles</label>
+
+  <input type="text" class="form-group" name="area" placeholder="Ingrese curso"  required> 
+
+
+</div>
+</div>
+        
+<button class="btn btn-primary">Enviar</button>
+
+</div>
+</form>
+
+{{>footer}}

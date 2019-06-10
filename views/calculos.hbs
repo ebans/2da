@@ -1,0 +1,58 @@
+{{>header}}
+<p>Registrar Curso</p>
+
+<form  method="POST" action="/ingresar" >
+<div class="form-group">
+<div class="row">
+    <div class="col">
+
+<label>Codigo del curso</label>
+
+    
+    <input type="number" class="form-group" name="codCurso"  placeholder="codigo curso" required>
+    
+   </div>
+    <div class="col">
+<label>Nombre del Curso</label>
+
+ 
+<input type="text" class="form-group" name="nombre" placeholder="nombre curso" required>
+ 
+</div>
+
+   <div class="col">
+<label>Modalidad</label>
+
+    
+<input type="text" class="form-group" name="modalidad" placeholder="modalidad" required>
+
+</div>
+</div>
+<div class="row">
+    <div class="col">
+<label>valor</label>
+
+   
+<input type="number" class="form-group" name="valor" placeholder="valor" required>
+</div>
+<div class="col">
+<label>Descripción del curso</label>
+
+    
+<input type="text" class="form-group" name="descripcion" required placeholder="descripcion">
+
+</div>
+<div class="col">
+<label>Intensidad Horaria</label>
+
+    
+<input type="number" class="form-group" name="intensidad" placeholder="intensidad" required>
+</div>
+</div>
+        
+<button class="btn btn-primary">Enviar</button>
+
+</div>
+</form>
+
+{{>footer}}
